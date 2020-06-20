@@ -1,5 +1,6 @@
 //FONT
-$Principal-Font:'Roboto', sans-serif;
+$Principal-Font:'Roboto',
+sans-serif;
 
 /*BREAK POINTS*/
 $minimobile-breakpoint: 300px;
@@ -7,3 +8,148 @@ $mobile-breakpoint: 568px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
 
+body {
+    background-color: #333;
+    font-family: $Principal-Font;
+    display: flex;
+    justify-content: center;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 2px;
+    }
+
+    //Estilos barra (thumb) de scroll 
+    &::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: #999999;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    //Estilos track de scroll 
+    &::-webkit-scrollbar-track {
+        background: #999;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track:hover,
+    &::-webkit-scrollbar-track:active {
+        background: #222;
+    }
+
+
+    main {
+        .wrapper {
+            width: 400px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: #444;
+
+
+            .form-wrapper {
+                max-width: 300px;
+                align-self: center;
+                justify-self: center;
+
+                .input-user {
+                    border: none;
+                    min-width: 50px;
+                    min-height: 30px;
+                }
+
+                .search {
+                    margin-top: 30px;
+                    font-size: 1.4em;
+                    height: 30px;
+                    border-radius: 10px;
+                }
+
+                .button-js {
+                    background-color: #ffecc7;
+                    border-style: solid;
+                    border-width: 0px;
+                    border-radius: 5px;
+                    height: 30px;
+                    color: #141f21;
+                    font-weight: bold;
+                    font-size: 1.4em;
+
+                    &:hover {
+                        background-color: #111;
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+
+            .error {
+                color: #fff;
+                display: flex;
+                align-self: center;
+                margin-top: 60px;
+                display: none;
+                font-size: 2.5em;
+                flex-direction: column;
+            }
+
+            .info-box {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                justify-self: center;
+                color: #fff;
+                width: 300px;
+                min-height: 470px;
+                margin-top: 50px;
+                border-style: solid;
+                border-radius: 10px;
+                border-color: #ffecc7;
+                text-align: center;
+                visibility: visible;
+            }
+
+            .box-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+                margin-top: -30px;
+                font-size: 1.5em;
+            }
+
+            .box {
+                font-size: 0.9em;
+                color: #fafafa;
+            }
+
+            .js-pic-box {
+                background-image: url("https://assets.codepen.io/4262615/internal/avatars/users/default.png?format=auto&height=80&version=1585175243&width=80");
+                background-size: cover;
+                width: 90px;
+                height: 90px;
+                border-radius: 50px;
+                visibility: hidden;
+                flex: 1 0 auto;
+                border-color: #ffecc7;
+                border-style: solid;
+            }
+
+            .user-name-box {
+                font-size: 1.6em;
+                color: #fff;
+                padding: 10px;
+            }
+        }
+    }
+}

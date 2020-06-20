@@ -1,2 +1,176 @@
 /*BREAK POINTS*/
+body {
+  background-color: #333;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+  background: #999;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover, body::-webkit-scrollbar-track:active {
+  background: #222;
+}
+
+body main .wrapper {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+body main .wrapper .form-wrapper {
+  max-width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .wrapper .form-wrapper .input-user {
+  border: none;
+  min-width: 50px;
+  min-height: 30px;
+}
+
+body main .wrapper .form-wrapper .search {
+  margin-top: 30px;
+  font-size: 1.4em;
+  height: 30px;
+  border-radius: 10px;
+}
+
+body main .wrapper .form-wrapper .button-js {
+  background-color: #ffecc7;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  height: 30px;
+  color: #141f21;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+body main .wrapper .form-wrapper .button-js:hover {
+  background-color: #111;
+  color: #fff;
+  border: none;
+}
+
+body main .wrapper .error {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 60px;
+  display: none;
+  font-size: 2.5em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .wrapper .info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  color: #fff;
+  width: 300px;
+  min-height: 470px;
+  margin-top: 50px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ffecc7;
+  text-align: center;
+  visibility: visible;
+}
+
+body main .wrapper .box-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-top: -30px;
+  font-size: 1.5em;
+}
+
+body main .wrapper .box {
+  font-size: 0.9em;
+  color: #fafafa;
+}
+
+body main .wrapper .js-pic-box {
+  background-image: url("https://assets.codepen.io/4262615/internal/avatars/users/default.png?format=auto&height=80&version=1585175243&width=80");
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  visibility: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  border-color: #ffecc7;
+  border-style: solid;
+}
+
+body main .wrapper .user-name-box {
+  font-size: 1.6em;
+  color: #fff;
+  padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */
